@@ -4,32 +4,35 @@ using namespace std;
 
 struct Person
 {
-
-	int toes ;
-	int knees ;
-	int shoulder ; 
-	int head ;
-	
-	
-
+	int toes;
+	int knees;
+	int shoulder; 
+	int head;	
 };
 
 int main()
-
 {
-	Person Person;
-  cin>>Person.toes;
-  cin>>Person.knees;
-  cin>>Person.shoulder;
-  cin>>Person.head;
+	
+Person person[5];
+	
+	for (int i=0;i<5;i++)
+	{
+	
+  cin>>person[i].toes;
+  cin>>person[i].knees;
+  cin>>person[i].shoulder;
+  cin>>person[i].head;
+}
+  for(int i=0;i<5;i++)
+  {
   
-  cout<<Person.toes<<"\n";
-  cout<<Person.knees<<"\n";
-  cout<<Person.shoulder<<"\n";
-  cout<<Person.head<<"\n";
-	
-	
-	
+  
+  cout<<"Person number:"<<i+1;
+  cout<<person[i].toes<<"\n";
+  cout<<person[i].knees<<"\n";
+  cout<<person[i].shoulder<<"\n";
+  cout<<person[i].head<<"\n";
+}
 	return 0;
 }
 	
